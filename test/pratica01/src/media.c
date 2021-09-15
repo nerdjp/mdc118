@@ -10,7 +10,6 @@ void printHelp()
 
 int main(int argc, char** argv)
 {
-	//if(argv[0] < 0 || argv[
 	float a1;
 	float a2;
 	if (argc != 3)
@@ -18,13 +17,15 @@ int main(int argc, char** argv)
 		printHelp();
 		return 1;
 	}
+
 	a1 = atoi(argv[1]);
 	a2 = atoi(argv[2]);
+
 	if(a1 < 0 || a1 > 10 || a2 < 0 || a2 > 10)
 	{
 		printHelp();
 		return 1;
 	}
-	float media = ((0.4 * a1) + (0.6 * a2));
+	float media = (0.4 * a1) + (0.6 * a2);
 	printf("Media: %g\n", media);
 }
