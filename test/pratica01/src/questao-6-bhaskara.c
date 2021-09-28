@@ -23,14 +23,17 @@ int main(int argc, char** argv)
 	b = atof(argv[2]);
 	c = atof(argv[3]);
 
-	float delta = pow(b, 2) - 4 * a * c;
+	float delta = (b * b) - (4 * (a * c));
+
 	if(delta < 0) {
 		printf("A raiz da equação %gx² + %gx + %g é impossivel pois delta é negativo.\n", a, b, c);
 		return 1;
 	}
 
-	float raiz_positiva = (-1 * b) + sqrt(delta) / (2 * a);
-	float raiz_negativa = (-1 * b) - sqrt(delta) / (2 * a);
+	float raiz_delta = sqrt(delta);
+
+	float raiz_positiva = (-b + raiz_delta) / (2 * a);
+	float raiz_negativa = (-b - raiz_delta) / (2 * a);
 
 	printf("A raiz da equação %gx² + %gx + %g é:\nPositiva: %g\nNegativa: %g\n", a, b, c, raiz_positiva, raiz_negativa);
 	return 0;
