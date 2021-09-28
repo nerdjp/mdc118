@@ -10,8 +10,8 @@ void printHelp()
 
 int main(int argc, char** argv)
 {
-	float a1;
-	float a2;
+	float a1 = 0;
+	float a2 = 0;
 	if (argc != 3)
 	{
 		printHelp();
@@ -28,4 +28,5 @@ int main(int argc, char** argv)
 	}
 	float media = (0.4 * a1) + (0.6 * a2);
 	printf("Media: %g\n", media);
+	return 0;
 }

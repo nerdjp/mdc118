@@ -10,8 +10,7 @@ void printHelp()
 
 int main(int argc, char** argv)
 {
-	//if(argv[0] < 0 || argv[
-	int raio;
+	int raio = 0;
 	const float pi = 3.1416;
 	if (argc != 2)
 	{
@@ -20,5 +19,5 @@ int main(int argc, char** argv)
 	}
 	raio = atoi(argv[1]);
 	float perimetro = 2 * pi * raio;
-	printf("o raio da pizza de raio %d é %g\n", raio, perimetro);
+	printf("o perimetro da pizza de raio %d é %g\n", raio, perimetro);
 }

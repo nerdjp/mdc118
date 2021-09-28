@@ -11,8 +11,8 @@ void printHelp()
 int main(int argc, char** argv)
 {
 	//if(argv[0] < 0 || argv[
-	int base;
-	int altura;
+	int base = 0;
+	int altura = 0;
 	if (argc != 3)
 	{
 		printHelp();
@@ -27,4 +27,5 @@ int main(int argc, char** argv)
 	}
 	int area = (base * altura) / 2;
 	printf("Area do triângulo de base %d e altura %d é %d\n", base, altura, area);
+	return 0;
 }
