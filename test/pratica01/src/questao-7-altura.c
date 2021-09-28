@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 		printHelp();
 		return 1;
 	}
-	double altura = sin(angulo * (180 / pi)) * distancia;
+	double altura = sin(angulo * pi / 180) * distancia;
 
 	printf("A altura alcançada depois de %g metros percorridos com ângulo %g é de %g metros\n", distancia, angulo, altura);
 	return 0;
