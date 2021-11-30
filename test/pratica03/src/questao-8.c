@@ -12,4 +12,5 @@ int main() {
 	int num;
 	printf("Insira o número: ");
 	scanf("%d", &num);
+	 printf("O numero em factorial é %d", factorial(num));
 }
