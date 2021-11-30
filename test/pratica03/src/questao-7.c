@@ -11,5 +11,6 @@ int fibonnaci(int n) {
 
 int main() {
 	for (int i = 1; i <= 10; i++)
-		printf("%d\n", fibonnaci(i));
+		printf("%d ", fibonnaci(i));
+	printf("\n");
 }

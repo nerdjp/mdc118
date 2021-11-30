@@ -11,5 +11,10 @@ int main() {
 	printf("Insira o número decimal: ");
 	scanf("%d", &num);
 
+	if(num > 1024) {
+		printf("Numero muito grande.\n");
+		return 0;
+	}
+
 	printf("%d em binário é %d\n", num, emBinario(num));
 }

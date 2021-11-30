@@ -4,6 +4,10 @@ int main() {
 	char matrix[6][5];
 	char string[31];
 
+	for(int i = 0; i < 32; i++) {
+		string[i] = '\0';
+	}
+
 	int g = 0;
 	printf("Insira a frase de até 30 caracteres: ");
 	scanf("%30[^\n]s", string);
